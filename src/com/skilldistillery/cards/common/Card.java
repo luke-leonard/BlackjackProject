@@ -1,6 +1,7 @@
 package com.skilldistillery.cards.common;
 
 public class Card {
+	
 	private Suit suit;
 	private Rank rank;
 	@Override
