@@ -2,8 +2,46 @@ package com.skilldistillery.cards.common;
 
 public class Card {
 	
+	// F I E L D S
 	private Suit suit;
 	private Rank rank;
+	private boolean faceUp;
+	
+	// C O N S T R U C T O R S
+	public Card() {
+		super();
+	}
+	
+	public Card(Suit suit, Rank rank) {
+		super();
+		this.suit = suit;
+		this.rank = rank;
+		this.faceUp = false;
+	}
+	public Card(Suit suit, Rank rank, boolean faceUp) {
+		super();
+		this.suit = suit;
+		this.rank = rank;
+		this.faceUp = faceUp;
+	}
+
+	// M E T H O D S
+	
+	public int getValue() {
+		return rank.ordinal() + 1;
+	}
+	
+	// A U T O _ G E N E R A T E D _ M E T H O D S
+	
+	@Override
+	public String toString() {
+		if(faceUp) {
+			return rank + " of " + suit;
+		}else {
+			return "Face down";
+		}
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -27,19 +65,7 @@ public class Card {
 			return false;
 		return true;
 	}
-	@Override
-	public String toString() {
-		return rank + " of " + suit;
-	}
-	
-	public Card(Suit suit, Rank rank) {
-		super();
-		this.suit = suit;
-		this.rank = rank;
-	}
-	public int getValue() {
-		return rank.ordinal() + 1;
-	}
+
 	public Suit getSuit() {
 		return suit;
 	}
@@ -51,6 +77,14 @@ public class Card {
 	}
 	public void setRank(Rank rank) {
 		this.rank = rank;
+	}
+
+	public boolean isFaceUp() {
+		return faceUp;
+	}
+
+	public void setFaceUp(boolean faceUp) {
+		this.faceUp = faceUp;
 	}
 	
 	

@@ -1,7 +1,7 @@
 package com.skilldistillery.cards.common;
 
 public enum Rank {
-	ACE("1"),
+	ACE("Ace"),
 	TWO("2"),
 	THREE("3"),
 	FOUR("4"),
@@ -24,5 +24,9 @@ public enum Rank {
 	@Override
 	public String toString() {
 		return name;
+	}
+	
+	public boolean isFaceCard() {
+		return (this.equals(JACK)||this.equals(QUEEN)||this.equals(KING));
 	}
 }

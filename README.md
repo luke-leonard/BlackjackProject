@@ -3,6 +3,8 @@
 ## Week 5 Homework for SkillDistillery
 ### Overview
 
+[a relative link](UML\ BlackJack.pdf)
+
 ### Concepts
 - Object Oriented Code
 - Static Serialization
