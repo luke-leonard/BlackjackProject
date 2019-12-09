@@ -3,7 +3,7 @@
 ## Week 5 Homework for SkillDistillery
 ### Overview
 
-[a relative link](UML\ BlackJack.pdf)
+[Getting started with Blackjack](UML.pdf)
 
 ### Concepts
 - Object Oriented Code
